@@ -35,7 +35,7 @@
         android:id="@+id/empezarButton"
         android:layout_width="256dp"
         android:layout_height="167dp"
-        android:background="@drawable/pressed_letsgo_button_effect"
+        android:background="@drawable/letsgobuttonbox"
         android:fontFamily="@font/bungee"
         android:onClick="Empezar"
         android:textColor="@color/black"

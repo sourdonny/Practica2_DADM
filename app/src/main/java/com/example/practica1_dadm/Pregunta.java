@@ -24,8 +24,7 @@ import java.util.List;
 
 public class Pregunta extends AppCompatActivity {
 
-    AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
-    ItemDAO dao = db.itemDAO();
+
 
     DatabaseItem i = new DatabaseItem();
 

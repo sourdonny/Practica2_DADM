@@ -131,7 +131,7 @@
         android:id="@+id/menuPrincipalButton"
         android:layout_width="144dp"
         android:layout_height="106dp"
-        android:background="@drawable/pressed_mainmenu_button_effect"
+        android:background="@drawable/mainmenubuttonbox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"
