@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         jugar = findViewById(R.id.jugarButton);
         ajustes = findViewById(R.id.ajustesButton);
         salir = findViewById(R.id.salirButton);
+
 
         jugar.setOnClickListener(new View.OnClickListener() {
             @Override

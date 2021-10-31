@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import com.example.practica1_dadm.database.AppDatabase;
 import com.example.practica1_dadm.database.dao.ItemDAO;
 import com.example.practica1_dadm.database.entity.DatabaseItem;
+import com.example.practica1_dadm.repository.ItemRepository;
 import com.example.practica1_dadm.repository.ItemRepositoryImpl;
 
 import java.util.ArrayList;
@@ -23,9 +25,6 @@ import java.util.List;
 
 
 public class Pregunta extends AppCompatActivity {
-
-    AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
-    ItemDAO dao = db.itemDAO();
 
     DatabaseItem i = new DatabaseItem();
 
@@ -54,6 +53,18 @@ public class Pregunta extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pregunta);
+
+        AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
+        ItemDAO dao = db.itemDAO();
+        ItemRepository repo = new ItemRepositoryImpl(dao);
+
+        DatabaseItem item = new DatabaseItem();
+        item.setTitulo("Item 1");
+        item.setIdxPregunta(2);
+        repo.InsertItem(item);
+
+        List<DatabaseItem> items = repo.getAllItems();
+
 
         GameMusic = MediaPlayer.create(Pregunta.this, R.raw.questionmusic);
         GameMusic.start();
