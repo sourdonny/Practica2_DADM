@@ -37,7 +37,7 @@ public class Name extends AppCompatActivity {
 
     public void Empezar(View view){
         Intent preguntas = new Intent(this, Pregunta.class);
-        preguntas.putExtra("nombre", "PATATA");
+        //preguntas.putExtra("nombre", nombreEditText.toString());
         startActivity(preguntas);
         finish();
     }

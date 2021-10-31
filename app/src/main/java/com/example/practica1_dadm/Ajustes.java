@@ -9,7 +9,6 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.SeekBar;
 
 public class Ajustes extends AppCompatActivity {
@@ -39,7 +38,7 @@ public class Ajustes extends AppCompatActivity {
         button10 = findViewById(R.id.tenQuestionsButton);
         button15 = findViewById(R.id.fifteenQuestionsButton);
 
-        menuPrincipal = findViewById(R.id.menuPrincipalButton);
+        menuPrincipal = findViewById(R.id.menuPrincipalButton2);
 
         button5.setBackgroundResource(R.drawable.fivebuttonspressedbox);
 

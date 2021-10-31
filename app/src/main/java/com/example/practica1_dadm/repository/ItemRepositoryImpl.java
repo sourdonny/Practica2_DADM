@@ -1,7 +1,7 @@
 package com.example.practica1_dadm.repository;
 
 import com.example.practica1_dadm.database.dao.ItemDAO;
-import com.example.practica1_dadm.database.entity.DatabaseItem;
+import com.example.practica1_dadm.database.entity.Item;
 
 import java.util.List;
 
@@ -13,27 +13,27 @@ public class ItemRepositoryImpl implements ItemRepository{
     }
 
     @Override
-    public List<DatabaseItem> getAllItems() {
+    public List<Item> getAllItems() {
         return dao.getAll();
     }
 
     @Override
-    public DatabaseItem findItemById(int idxItem) {
+    public Item findItemById(int idxItem) {
         return dao.findByIdx(idxItem);
     }
 
     @Override
-    public void InsertItem(DatabaseItem databaseItem) {
-        dao.Insert(databaseItem);
+    public void InsertItem(Item item) {
+        dao.Insert(item);
     }
 
     @Override
-    public void UpdateItem(DatabaseItem databaseItem) {
-        dao.Update(databaseItem);
+    public void UpdateItem(Item item) {
+        dao.Update(item);
     }
 
     @Override
-    public void DeleteItem(DatabaseItem databaseItem) {
-        dao.Delete(databaseItem);
+    public void DeleteItem(Item item) {
+        dao.Delete(item);
     }
 }

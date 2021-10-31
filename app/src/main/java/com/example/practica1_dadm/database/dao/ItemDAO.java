@@ -6,24 +6,24 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.practica1_dadm.database.entity.DatabaseItem;
+import com.example.practica1_dadm.database.entity.Item;
 
 import java.util.List;
 
 @Dao
 public interface ItemDAO {
     @Query("select * from PREGUNTA")
-    List<DatabaseItem> getAll();
+    List<Item> getAll();
 
     @Query("select * from PREGUNTA where idxPregunta = :idxPregunta")
-    DatabaseItem findByIdx(int idxPregunta);
+    Item findByIdx(int idxPregunta);
 
     @Insert
-    void Insert(DatabaseItem databaseItem);
+    void Insert(Item item);
 
     @Update
-    void Update(DatabaseItem databaseItem);
+    void Update(Item item);
 
     @Delete
-    void Delete(DatabaseItem databaseItem);
+    void Delete(Item item);
 }

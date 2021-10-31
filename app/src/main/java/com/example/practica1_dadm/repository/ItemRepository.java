@@ -1,13 +1,13 @@
 package com.example.practica1_dadm.repository;
 
-import com.example.practica1_dadm.database.entity.DatabaseItem;
+import com.example.practica1_dadm.database.entity.Item;
 
 import java.util.List;
 
 public interface ItemRepository {
-    List<DatabaseItem> getAllItems();
-    DatabaseItem findItemById(int idxItem);
-    void InsertItem(DatabaseItem databaseItem);
-    void UpdateItem(DatabaseItem databaseItem);
-    void DeleteItem(DatabaseItem databaseItem);
+    List<Item> getAllItems();
+    Item findItemById(int idxItem);
+    void InsertItem(Item item);
+    void UpdateItem(Item item);
+    void DeleteItem(Item item);
 }

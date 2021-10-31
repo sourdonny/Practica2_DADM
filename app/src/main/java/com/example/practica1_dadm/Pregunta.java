@@ -1,13 +1,12 @@
 package com.example.practica1_dadm;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,8 +14,7 @@ import android.widget.TextView;
 
 import com.example.practica1_dadm.database.AppDatabase;
 import com.example.practica1_dadm.database.dao.ItemDAO;
-import com.example.practica1_dadm.database.entity.DatabaseItem;
-import com.example.practica1_dadm.repository.ItemRepository;
+import com.example.practica1_dadm.database.entity.Item;
 import com.example.practica1_dadm.repository.ItemRepositoryImpl;
 
 import java.util.ArrayList;
@@ -26,7 +24,33 @@ import java.util.List;
 
 public class Pregunta extends AppCompatActivity {
 
-    DatabaseItem i = new DatabaseItem();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pregunta);
+
+        MediaPlayer gameMusic = MediaPlayer.create(Pregunta.this, R.raw.questionmusic);
+        gameMusic.start();
+
+        AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
+        ItemDAO dao = db.itemDAO();
+        ItemRepositoryImpl repo = new ItemRepositoryImpl(dao);
+
+        Item item = new Item();
+        item.setTitulo("Item 1");
+        item.setIdxPregunta(2);
+        repo.InsertItem(item);
+
+        List<Item> items = repo.getAllItems();
+
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.add(R.id.preguntaFrameLayout, new PreguntaTexto());
+        ft.commit();
+    }
+
+    /*
+    AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
+    ItemDAO dao = db.itemDAO();
 
     public String nombreJugador;
     protected int idCorrect;
@@ -53,18 +77,6 @@ public class Pregunta extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pregunta);
-
-        AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
-        ItemDAO dao = db.itemDAO();
-        ItemRepository repo = new ItemRepositoryImpl(dao);
-
-        DatabaseItem item = new DatabaseItem();
-        item.setTitulo("Item 1");
-        item.setIdxPregunta(2);
-        repo.InsertItem(item);
-
-        List<DatabaseItem> items = repo.getAllItems();
-
 
         GameMusic = MediaPlayer.create(Pregunta.this, R.raw.questionmusic);
         GameMusic.start();
@@ -219,4 +231,5 @@ public class Pregunta extends AppCompatActivity {
 
         return idxCorrect;
     }
+    */
 }

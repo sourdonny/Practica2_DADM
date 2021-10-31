@@ -128,10 +128,10 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/menuPrincipalButton"
+        android:id="@+id/menuPrincipalButton2"
         android:layout_width="144dp"
         android:layout_height="106dp"
-        android:background="@drawable/mainmenubuttonbox"
+        android:background="@drawable/pressed_mainmenu_button_effect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.48"

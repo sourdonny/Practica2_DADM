@@ -7,10 +7,10 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.example.practica1_dadm.database.dao.ItemDAO;
-import com.example.practica1_dadm.database.entity.DatabaseItem;
+import com.example.practica1_dadm.database.entity.Item;
 
 @Database(entities = {
-        DatabaseItem.class
+        Item.class
 }, version = 1)
 
 public abstract class AppDatabase extends RoomDatabase{
