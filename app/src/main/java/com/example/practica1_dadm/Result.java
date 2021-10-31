@@ -24,14 +24,14 @@ public class Result extends AppCompatActivity {
 
         resultmusic = MediaPlayer.create(Result.this, R.raw.resultmusic);
         resultmusic.start();
-
+/*
         nombre = getIntent().getStringExtra("nombre");
         nombreJugador = (TextView)findViewById(R.id.textView6);
         nombreJugador.setText("JUGADOR: " + nombre);
 
         pts = getIntent().getStringExtra("puntos");
         puntuacion = (TextView)findViewById(R.id.textView4);
-        puntuacion.setText("PUNTOS" + "\n" + pts);
+        puntuacion.setText("PUNTOS" + "\n" + pts);*/
     }
 
     public void VolverMenuPrincipal(View view){

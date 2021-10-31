@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.practica1_dadm.database.AppDatabase;
 import com.example.practica1_dadm.database.dao.ItemDAO;
+import com.example.practica1_dadm.database.entity.DatabaseItem;
 import com.example.practica1_dadm.database.entity.Item;
 import com.example.practica1_dadm.repository.ItemRepositoryImpl;
 
