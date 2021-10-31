@@ -26,7 +26,7 @@ public class Result extends AppCompatActivity {
         resultmusic.start();
 
         nombre = getIntent().getStringExtra("nombre");
-        nombreJugador = (TextView)findViewById(R.id.textView6);
+        nombreJugador = (TextView)findViewById(R.id.nombreEditText);
         nombreJugador.setText("JUGADOR: " + nombre);
 
         pts = getIntent().getStringExtra("puntos");
