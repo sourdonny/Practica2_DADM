@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Practica1_DADM</string>
+    //Pantalla de título
+
+    //Preguntas
+    //Pregunta 1
+    <string name="pregunta1">"¿Quien es mas poderoso?"</string>
+    <string name="respuesta11">"Meruem"</string>
+    <string name="respuesta12">"Chrollo"</string>
+    <string name="respuesta13">"Hisoka"</string>
+    <string name="respuesta14">"Gon Chiquito"</string>
+
+    //Pregunta 2
+    <string name="pregunta2">¿Quién es el lider del Shie Hassaikai de Boku No Hero Academia?</string>
+    <string name="respuesta21">"Overhaul"</string>
+    <string name="respuesta22">"Mineta"</string>
+    <string name="respuesta23">"Kendo Rappa"</string>
+    <string name="respuesta24">"El Jefe"</string>
+
+
+    //Pregunta 3
+    <string name="pregunta3">¿Quien es el amor platonico de Denji de Chainsaw Man?</string>
+    <string name="respuesta31">"Makima"</string>
+    <string name="respuesta32">"Power"</string>
+    <string name="respuesta33">"Kobeni Higashiyama"</string>
+    <string name="respuesta34">"Reze"</string>
+
+
+    //Pregunta 4
+    <string name="pregunta4">¿Cómo se llama la maldición que lleva dentro Itadori de Jujutsu Kaisen?</string>
+    <string name="respuesta41">"Sukuna"</string>
+    <string name="respuesta42">"Jogo"</string>
+    <string name="respuesta43">"Gojo"</string>
+    <string name="respuesta44">"Mahito"</string>
+
+    //Pregunta 5
+    <string name="pregunta5">¿Cuál es el apodo que recibe Mikey de Tokyo Revengers?</string>
+    <string name="respuesta51">"El invencible"</string>
+    <string name="respuesta52">"El imbatible"</string>
+    <string name="respuesta53">"El guapo"</string>
+    <string name="respuesta54">"El Gran Lider"</string>
+
+    //Tutorial
+    <string name="introductionText">¡BIENVENIDO A SHONEN QUIZ!\n\nEN ESTE CONCURSO PODRÁS DEMOSTRAR QUE ERES EL VERDADERO PROTAGONISTA DE TU SERIE DE ACCIÓN GENÉRICA</string>
+    <string name="explanationText">TENDRÁS QUE RESPONDER UNA SERIE DE PREGUNTAS SOBRE MANGA Y ANIME DEL GÉNERO SHONEN</string>
+    <string name="explanationText2">DEPENDIENDO DE LAS QUE ACIERTES, UNA RAZA SUPERIOR QUE NO SE HA MENCIONADO EN NINGÚN MOMENTO DE ESTA EXPLICACIÓN DECIDIRÁ SI ESTÁS OP O SI NECESITAS AYUDA DEL PODER DE LA AMISTAD</string>
+
+    //Inscripción
+    <string name="nameText">ESCRIBE TU NOMBRE DE PROTAGONISTA</string>
+    <string name="enterText"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
