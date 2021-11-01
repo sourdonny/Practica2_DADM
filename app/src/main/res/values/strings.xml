@@ -9,6 +9,7 @@
     <string name="respuesta12">"Chrollo"</string>
     <string name="respuesta13">"Hisoka"</string>
     <string name="respuesta14">"Gon Chiquito"</string>
+    <integer name="tipoPregunta1">0</integer>
 
     //Pregunta 2
     <string name="pregunta2">¿Quién es el lider del Shie Hassaikai de Boku No Hero Academia?</string>
@@ -16,22 +17,23 @@
     <string name="respuesta22">"Mineta"</string>
     <string name="respuesta23">"Kendo Rappa"</string>
     <string name="respuesta24">"El Jefe"</string>
-
+    <integer name="tipoPregunta2">0</integer>
 
     //Pregunta 3
-    <string name="pregunta3">¿Quien es el amor platonico de Denji de Chainsaw Man?</string>
+    <string name="pregunta3">¿Cómo se llama la chica con la que Denji está obsesionado?</string>
     <string name="respuesta31">"Makima"</string>
     <string name="respuesta32">"Power"</string>
-    <string name="respuesta33">"Kobeni Higashiyama"</string>
-    <string name="respuesta34">"Reze"</string>
-
+    <string name="respuesta33">"Himeno"</string>
+    <string name="respuesta34">"Aki"</string>
+    <integer name="tipoPregunta3">0</integer>
 
     //Pregunta 4
-    <string name="pregunta4">¿Cómo se llama la maldición que lleva dentro Itadori de Jujutsu Kaisen?</string>
-    <string name="respuesta41">"Sukuna"</string>
-    <string name="respuesta42">"Jogo"</string>
-    <string name="respuesta43">"Gojo"</string>
-    <string name="respuesta44">"Mahito"</string>
+    <string name="pregunta4">¿Quién está luchando junto a Tanjiro, Zenitsu e Inosuke en el tren?</string>
+    <string name="respuesta41">"Rengoku"</string>
+    <string name="respuesta42">"Shinobu"</string>
+    <string name="respuesta43">"Tomioka"</string>
+    <string name="respuesta44">"Sabito"</string>
+    <integer name="tipoPregunta4">0</integer>
 
     //Pregunta 5
     <string name="pregunta5">¿Cuál es el apodo que recibe Mikey de Tokyo Revengers?</string>
@@ -39,6 +41,92 @@
     <string name="respuesta52">"El imbatible"</string>
     <string name="respuesta53">"El guapo"</string>
     <string name="respuesta54">"El Gran Lider"</string>
+    <integer name="tipoPregunta5">0</integer>
+
+    //Pregunta 6
+    <string name="pregunta6">¿Cuál es el quirk de Izuku Midoriya?</string>
+    <string name="respuesta61">"One For All"</string>
+    <string name="respuesta62">"Superfuerza"</string>
+    <string name="respuesta63">"All For One"</string>
+    <string name="respuesta64">"Superpoder"</string>
+    <integer name="tipoPregunta6">0</integer>
+
+    //Pregunta 7
+    <string name="pregunta7">¿Cuál es la posición de Tobio Kageyama en el equipo de voleibol?</string>
+    <string name="respuesta71">"Colocador"</string>
+    <string name="respuesta72">"Receptor"</string>
+    <string name="respuesta73">"Libero"</string>
+    <string name="respuesta74">"Recogepelotas"</string>
+    <integer name="tipoPregunta7">0</integer>
+
+    //Pregunta 8
+    <string name="pregunta8">¿Cómo se llama la orden de magos a la que pertenece Asta?</string>
+    <string name="respuesta81">"Toros negros"</string>
+    <string name="respuesta82">"Amanecer dorado"</string>
+    <string name="respuesta83">"Águilas plateadas"</string>
+    <string name="respuesta84">"Pulseras rojas"</string>
+    <integer name="tipoPregunta8">0</integer>
+
+    //Pregunta 9
+    <string name="pregunta9">¿Cómo se llama el hermano de Shinra?</string>
+    <string name="respuesta91">"Sho"</string>
+    <string name="respuesta92">"Vulkan"</string>
+    <string name="respuesta93">"Arthur"</string>
+    <string name="respuesta94">"Shoto"</string>
+    <integer name="tipoPregunta9">0</integer>
+
+    //Pregunta 10
+    <string name="pregunta10">¿Cómo se llama la maldición que tiene Yuuji Itadori dentro?</string>
+    <string name="respuesta101">"Sukuna"</string>
+    <string name="respuesta102">"Choso"</string>
+    <string name="respuesta103">"Mahito"</string>
+    <string name="respuesta104">"Sakuna"</string>
+    <integer name="tipoPregunta10">0</integer>
+
+    //Pregunta 11
+    <string name="pregunta11">¿Qué detesta Edward Elric?</string>
+    <string name="respuesta111">"La leche"</string>
+    <string name="respuesta112">"El pan"</string>
+    <string name="respuesta113">"El metal"</string>
+    <string name="respuesta114">"La alquimia"</string>
+    <integer name="tipoPregunta11">0</integer>
+
+    //Pregunta 12
+    <string name="pregunta12">¿Cómo se llama la técnica para manipular el alma de la persona en Hunter X Hunter?</string>
+    <string name="respuesta121">"Nen"</string>
+    <string name="respuesta122">"Ren"</string>
+    <string name="respuesta123">"Zen"</string>
+    <string name="respuesta124">"Ten"</string>
+    <integer name="tipoPregunta12">0</integer>
+
+    //Pregunta 13
+    <string name="pregunta13">¿A qué anime pertenece este opening? (Black Catcher de Black Clover)</string>
+    <string name="respuesta131">"Black Clover"</string>
+    <string name="respuesta132">"My Hero Academia"</string>
+    <string name="respuesta133">"Jujutsu Kaisen"</string>
+    <string name="respuesta134">"Black Mamba"</string>
+    <integer name="tipoPregunta13">0</integer>
+
+    //Pregunta 14
+    <string name="pregunta14">¿A qué personaje pertenece este grito? (El "MUEREEEEE" de Bakugo)</string>
+    <string name="respuesta141">"Bakugo Katsuki"</string>
+    <string name="respuesta142">"Asta"</string>
+    <string name="respuesta143">"Shoyo Hinata"</string>
+    <string name="respuesta144">"Nezuko"</string>
+    <integer name="tipoPregunta14">0</integer>
+
+    //Pregunta 15
+    <string name="pregunta15">¿Cómo  de Jujutsu Kaisen?</string>
+    <string name="respuesta151">"Sukuna"</string>
+    <string name="respuesta152">"Jogo"</string>
+    <string name="respuesta153">"Gojo"</string>
+    <string name="respuesta154">"Mahito"</string>
+    <integer name="tipoPregunta15">0</integer>
+
+
+
+
+
 
     //Tutorial
     <string name="introductionText">¡BIENVENIDO A SHONEN QUIZ!\n\nEN ESTE CONCURSO PODRÁS DEMOSTRAR QUE ERES EL VERDADERO PROTAGONISTA DE TU SERIE DE ACCIÓN GENÉRICA</string>
