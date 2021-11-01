@@ -28,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
         numPreguntas = getIntent().getStringExtra("numPreguntas");
         numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
         titleMusic = MediaPlayer.create(MainActivity.this, R.raw.titlemusic);
-        titleMusic.start();
+
+        if(!titleMusic.isPlaying()){
+            titleMusic.start();
+        }
 
         jugar = findViewById(R.id.jugarButton);
         ajustes = findViewById(R.id.ajustesButton);
@@ -63,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
         introducirNombre.putExtra("numPreguntas2", numPreguntas2);
         titleMusic.stop();
         startActivity(introducirNombre);
-        finish();
     }
 
     public void Ajustes(View view){

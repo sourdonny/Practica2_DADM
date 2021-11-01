@@ -1,14 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PreguntaAudio">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/preguntaTextoCardView"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:translationY="10dp"
+            app:cardBackgroundColor="#00FFFFFF">
+
+            <ImageView
+                android:id="@+id/tituloImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="264dp"
+                android:layout_gravity="center"
+                android:src="@drawable/questionbox" />
+
+            <TextView
+                android:id="@+id/tituloTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/bungee"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:translationX="-15dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <RadioGroup
+            android:layout_width="376dp"
+            android:layout_height="261dp"
+            android:layout_gravity="center"
+            android:translationX="0dp"
+            android:translationY="230dp">
+
+            <Button
+                android:id="@+id/respuesta1Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/bungee"
+                android:text="Button1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/respuesta2Button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/bungee"
+                android:text="Button2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/respuesta3Button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/bungee"
+                android:text="Button3"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/respuesta4Button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/bungee"
+                android:text="Button4"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Play" />
+
+    </FrameLayout>
 
 </FrameLayout>

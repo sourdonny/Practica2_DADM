@@ -15,12 +15,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardView3"
-        app:layout_constraintVertical_bias="0.050000012">
+        app:layout_constraintVertical_bias="0.100000024">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/nombreEditText"
-            android:layout_width="match_parent"
+            android:layout_width="376dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:background="@color/white"
             android:fontFamily="@font/bungee"
             android:gravity="center"
@@ -44,30 +45,39 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-        app:layout_constraintVertical_bias="0.19999999"
+        app:layout_constraintVertical_bias="0.25"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
-        android:layout_width="326dp"
-        android:layout_height="286dp"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:foregroundGravity="center"
         app:cardBackgroundColor="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25">
+        app:layout_constraintVertical_bias="0.19999999">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/resultbox" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/resultbox"
+            android:layout_width="305dp"
+            android:layout_height="289dp"
+            android:layout_gravity="center"
             android:fontFamily="@font/bungee"
+            android:gravity="center"
             android:text="@string/nameText"
             android:textAlignment="center"
             android:textColor="#000000"
-            android:textSize="34dp" />
+            android:textSize="35sp"
+            android:translationX="-10dp" />
     </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
