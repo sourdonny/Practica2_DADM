@@ -17,12 +17,16 @@ public class MainActivity extends AppCompatActivity {
     Button jugar;
     Button ajustes;
     Button salir;
+    String numPreguntas;
+    int numPreguntas2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        numPreguntas = getIntent().getStringExtra("numPreguntas");
+        numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
         titleMusic = MediaPlayer.create(MainActivity.this, R.raw.titlemusic);
         titleMusic.start();
 
@@ -55,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void Jugar(View view){
         Intent introducirNombre = new Intent(this, Name.class);
+        introducirNombre.putExtra("numPreguntas", numPreguntas);
+        introducirNombre.putExtra("numPreguntas2", numPreguntas2);
         titleMusic.stop();
         startActivity(introducirNombre);
         finish();

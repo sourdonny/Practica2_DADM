@@ -5,82 +5,94 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
     @Entity(tableName = "PREGUNTA")
-public class Item {
+    public class Item {
 
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey(autoGenerate = false)
     int idxPregunta;
 
     @ColumnInfo(name = "titulo")
-    String titulo;
+    int titulo;
 
     @ColumnInfo(name = "respuesta1")
-    String respuesta1;
+    int respuesta1;
 
     @ColumnInfo(name = "respuesta2")
-    String respuesta2;
+    int respuesta2;
 
     @ColumnInfo(name = "respuesta3")
-    String respuesta3;
+    int respuesta3;
 
     @ColumnInfo(name = "respuesta4")
-    String respuesta4;
+    int respuesta4;
 
     @ColumnInfo(name = "respuestaCorrecta")
-    String respuestaCorrecta;
+    int respuestaCorrecta;
 
-    public int getIdxPregunta() {
-        return idxPregunta;
-    }
+    @ColumnInfo(name = "tipoPregunta")
+    int tipoPregunta;
 
-    public void setIdxPregunta(int idxPregunta) {
-        this.idxPregunta = idxPregunta;
-    }
+        public int getTipoPregunta() {
+            return tipoPregunta;
+        }
 
-    public String getTitulo() {
-        return titulo;
-    }
+        public void setTipoPregunta(int tipoPregunta) {
+            this.tipoPregunta = tipoPregunta;
+        }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
+        public int getIdxPregunta() {
+            return idxPregunta;
+        }
 
-    public String getRespuesta1() {
-        return respuesta1;
-    }
+        public void setIdxPregunta(int idxPregunta) {
+            this.idxPregunta = idxPregunta;
+        }
 
-    public void setRespuesta1(String respuesta1) {
-        this.respuesta1 = respuesta1;
-    }
+        public int getTitulo() {
+            return titulo;
+        }
 
-    public String getRespuesta2() {
-        return respuesta2;
-    }
+        public void setTitulo(int titulo) {
+            this.titulo = titulo;
+        }
 
-    public void setRespuesta2(String respuesta2) {
-        this.respuesta2 = respuesta2;
-    }
+        public int getRespuesta1() {
+            return respuesta1;
+        }
 
-    public String getRespuesta3() {
-        return respuesta3;
-    }
+        public void setRespuesta1(int respuesta1) {
+            this.respuesta1 = respuesta1;
+        }
 
-    public void setRespuesta3(String respuesta3) {
-        this.respuesta3 = respuesta3;
-    }
+        public int getRespuesta2() {
+            return respuesta2;
+        }
 
-    public String getRespuesta4() {
-        return respuesta4;
-    }
+        public void setRespuesta2(int respuesta2) {
+            this.respuesta2 = respuesta2;
+        }
 
-    public void setRespuesta4(String respuesta4) {
-        this.respuesta4 = respuesta4;
-    }
+        public int getRespuesta3() {
+            return respuesta3;
+        }
 
-    public String getRespuestaCorrecta() {
-        return respuestaCorrecta;
-    }
+        public void setRespuesta3(int respuesta3) {
+            this.respuesta3 = respuesta3;
+        }
 
-    public void setRespuestaCorrecta(String respuestaCorrecta) {
-        this.respuestaCorrecta = respuestaCorrecta;
+        public int getRespuesta4() {
+            return respuesta4;
+        }
+
+        public void setRespuesta4(int respuesta4) {
+            this.respuesta4 = respuesta4;
+        }
+
+        public int getRespuestaCorrecta() {
+            return respuestaCorrecta;
+        }
+
+        public void setRespuestaCorrecta(int respuestaCorrecta) {
+            this.respuestaCorrecta = respuestaCorrecta;
+        }
+
     }
-}

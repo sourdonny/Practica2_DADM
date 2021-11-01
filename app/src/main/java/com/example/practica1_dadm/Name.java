@@ -14,11 +14,16 @@ public class Name extends AppCompatActivity {
 
     Button empezarButton;
     AppCompatEditText nombreEditText;
+    String numPreguntas;
+    int numPreguntas2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name);
+
+        numPreguntas = getIntent().getStringExtra("numPreguntas");
+        numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
 
         nombreEditText = (AppCompatEditText) findViewById(R.id.nombreEditText);
 
@@ -37,6 +42,8 @@ public class Name extends AppCompatActivity {
 
     public void Empezar(View view){
         Intent preguntas = new Intent(this, Pregunta.class);
+        preguntas.putExtra("numPreguntas", numPreguntas);
+        preguntas.putExtra("numPreguntas2", numPreguntas2);
         //preguntas.putExtra("nombre", nombreEditText.toString());
         startActivity(preguntas);
         finish();

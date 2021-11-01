@@ -103,6 +103,7 @@ public class Ajustes extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent menuPrincipal = new Intent(Ajustes.this, MainActivity.class);
+                menuPrincipal.putExtra("numPreguntas", numPreguntas);
                 startActivity(menuPrincipal);
                 finish();
             }

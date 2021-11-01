@@ -25,6 +25,11 @@ import java.util.List;
 
 public class Pregunta extends AppCompatActivity {
 
+    String numPreguntas;
+    int numPreguntas2;
+    List<Item> items;
+    public int idxpreguntaActual;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,22 +38,82 @@ public class Pregunta extends AppCompatActivity {
         MediaPlayer gameMusic = MediaPlayer.create(Pregunta.this, R.raw.questionmusic);
         gameMusic.start();
 
+        numPreguntas = getIntent().getStringExtra("numPreguntas");
+        numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
+
         AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
         ItemDAO dao = db.itemDAO();
         ItemRepositoryImpl repo = new ItemRepositoryImpl(dao);
 
-        Item item = new Item();
-        item.setTitulo("Item 1");
-        item.setIdxPregunta(2);
+        /*Item item = new Item();
+        item.setIdxPregunta(0);
+        item.setTitulo(R.string.pregunta1);
+        item.setRespuesta1(R.string.respuesta11);
+        item.setRespuesta2(R.string.respuesta12);
+        item.setRespuesta3(R.string.respuesta13);
+        item.setRespuesta4(R.string.respuesta14);
+        item.setRespuestaCorrecta(R.string.respuesta11);
+        item.setTipoPregunta(0);
         repo.InsertItem(item);
 
-        List<Item> items = repo.getAllItems();
+        Item item2 = new Item();
+        item2.setIdxPregunta(1);
+        item2.setTitulo(R.string.pregunta2);
+        item2.setRespuesta1(R.string.respuesta21);
+        item2.setRespuesta2(R.string.respuesta22);
+        item2.setRespuesta3(R.string.respuesta23);
+        item2.setRespuesta4(R.string.respuesta24);
+        item2.setRespuestaCorrecta(R.string.respuesta21);
+        item2.setTipoPregunta(0);
+        repo.InsertItem(item2);
+
+        Item item3 = new Item();
+        item3.setIdxPregunta(2);
+        item3.setTitulo(R.string.pregunta3);
+        item3.setRespuesta1(R.string.respuesta31);
+        item3.setRespuesta2(R.string.respuesta32);
+        item3.setRespuesta3(R.string.respuesta33);
+        item3.setRespuesta4(R.string.respuesta34);
+        item3.setRespuestaCorrecta(R.string.respuesta31);
+        item3.setTipoPregunta(1);
+        repo.InsertItem(item3);*/
+
+        items = repo.getAllItems();
+
+        Collections.shuffle(items);
 
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.add(R.id.preguntaFrameLayout, new PreguntaTexto());
+
+        switch(items.get(0).getTipoPregunta()) {
+            case 0:
+                items.remove(0);
+                ft.replace(R.id.preguntaFrameLayout, new PreguntaTexto());
+                break;
+
+            case 1:
+                ft.replace(R.id.preguntaFrameLayout, new PreguntaAudio());
+                break;
+        }
         ft.commit();
+
     }
 
+    public void next(){
+        FragmentTransaction fts = getSupportFragmentManager().beginTransaction();
+
+        switch(items.get(0).getTipoPregunta()) {
+            case 0:
+                items.remove(0);
+                fts.replace(R.id.preguntaFrameLayout, new PreguntaTexto());
+                break;
+
+            case 1:
+                items.remove(0);
+                fts.replace(R.id.preguntaFrameLayout, new PreguntaAudio());
+                break;
+        }
+        fts.commit();
+    }
     /*
     AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
     ItemDAO dao = db.itemDAO();
@@ -204,7 +269,7 @@ public class Pregunta extends AppCompatActivity {
             }, 2000);
             puntos.setText("" + pts);
             Intent result = new Intent(Pregunta.this, Result.class);
-            result.putExtra("puntos", "PATATA");
+            result.putExtra("puntos", "puntos");
             result.putExtra("nombre", nombreJugador);
             GameMusic.stop();
 
