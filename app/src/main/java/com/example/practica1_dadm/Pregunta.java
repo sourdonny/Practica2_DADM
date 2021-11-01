@@ -100,7 +100,6 @@ public class Pregunta extends AppCompatActivity {
 
     public void next(){
         FragmentTransaction fts = getSupportFragmentManager().beginTransaction();
-
         switch(items.get(0).getTipoPregunta()) {
             case 0:
                 items.remove(0);
