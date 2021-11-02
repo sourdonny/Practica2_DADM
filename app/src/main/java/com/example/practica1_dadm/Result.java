@@ -3,10 +3,13 @@ package com.example.practica1_dadm;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import java.lang.reflect.Array;
 
 public class Result extends AppCompatActivity {
 
@@ -33,6 +36,9 @@ public class Result extends AppCompatActivity {
         numPreguntas2 = getIntent().getIntExtra("numPreguntas2", 5);
         nombreJugador.setText("JUGADOR: \n" + nombre);
         puntuacion.setText(acertadas + "/" + numPreguntas2);
+
+        referenciasCompartidas();
+
     }
 
     public void VolverMenuPrincipal(View view){
@@ -47,6 +53,41 @@ public class Result extends AppCompatActivity {
         resultmusic.stop();
         startActivity(menuPrincipal);
         finish();
+    }
+
+    public void referenciasCompartidas(){
+        SharedPreferences ajustes = getApplicationContext().getSharedPreferences("MyPref", 0);
+        SharedPreferences.Editor editor = ajustes.edit();
+        String[] nombres = new String[6];
+        int[] pregAcert = new int[6];
+
+        for(int i = 0; i < 5; i++){
+            nombres[i] = ajustes.getString("nombres" + i, "");
+            pregAcert[i] = ajustes.getInt("acert" + i, -1);
+        }
+
+        nombres[5] = nombre;
+        pregAcert[5] = acertadas;
+
+        for(int i = 0; i < 5; i++){
+            for(int j = i+1; j < 6; j++){
+                if(pregAcert[i] < pregAcert[j]){
+                    int aux = pregAcert[i];
+                    pregAcert[i] = pregAcert[j];
+                    pregAcert[j] = aux;
+                    String s = nombres[i];
+                    nombres[i] = nombres[j];
+                    nombres[j] = s;
+                }
+            }
+        }
+
+        for(int i = 0; i < 5; i++){
+            editor.putInt("acert" + i, pregAcert[i]);
+            editor.putString("nombres" + i, nombres[i]);
+            editor.commit();
+        }
+
     }
 
 

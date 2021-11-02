@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.100000024"
-        app:srcCompat="@drawable/rankingtitle" />
+        app:srcCompat="@color/black" />
 
     <Button
         android:id="@+id/menuPrincipalButton2"
@@ -32,7 +32,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/linearLayout"
         android:layout_width="333dp"
         android:layout_height="305dp"
         android:gravity="top"
@@ -44,6 +44,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
+            android:id="@+id/Layout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -75,12 +76,13 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:text="0"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/Layout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -112,12 +114,13 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:text="0"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/Layout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -149,12 +152,13 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:text="0"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/Layout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -186,12 +190,13 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:text="0"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/Layout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -223,9 +228,10 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/bungee"
                 android:text="0"
-                android:textAlignment="textStart"
+                android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
         </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
