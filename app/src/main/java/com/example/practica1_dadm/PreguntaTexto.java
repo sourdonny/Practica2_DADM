@@ -29,6 +29,7 @@ public class PreguntaTexto extends Fragment {
     List<Integer> respuestas = new ArrayList<>();
     protected int idCorrect;
     private int pregTotales = 0;
+    private int pts = 0;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,6 +48,7 @@ public class PreguntaTexto extends Fragment {
 
         item = ((Pregunta)getActivity()).items.get(0);
         pregTotales = ((Pregunta)getActivity()).idxpreguntaActual;
+        pts = ((Pregunta) getActivity()).puntos;
 
         respuestas.add(item.getRespuesta1());
         respuestas.add(item.getRespuesta2());
@@ -92,47 +94,45 @@ public class PreguntaTexto extends Fragment {
         for(int i = 0; i < botones.length; i++){
             botones[i].setEnabled(false);
         }
-        if(pregTotales != ((Pregunta)getActivity()).items.size()) {
+        if(pregTotales < ((Pregunta)getActivity()).items.size() - 1) {
             if (id == idCorrect) {
-                //pts += 10;
+                pts += 10;
                 botones[id].setBackgroundColor(Color.GREEN);
             } else {
                 botones[id].setBackgroundColor(Color.RED);
             }
             pregTotales++;
 
-            ((Pregunta) getActivity()).next();
-            /*botones[id].postDelayed(new Runnable() {
+            botones[id].postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    idCorrect = config(preguntas[idxpreguntaActual], respuestas);
+                    idCorrect = config(item.getTitulo(), respuestas);
                     if(pregTotales == 4){
                         imagen.setAlpha(1f);
                     }
                 }
-            }, 2000);*/
+            }, 2000);
+            ((Pregunta) getActivity()).next();
+
         }else {
             if (id == idCorrect) {
-                //pts += 10;
+                pts += 10;
                 botones[id].setBackgroundColor(Color.GREEN);
             } else {
                 botones[id].setBackgroundColor(Color.RED);
             }
-            ((Pregunta) getActivity()).next();
-            /*botones[id].postDelayed(new Runnable() {
+
+            botones[id].postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    idCorrect = config(preguntas[idxpreguntaActual], respuestas[idxpreguntaActual]);
-                    if(idxpreguntaActual == 4){
+                    idCorrect = config(item.getTitulo(), respuestas);
+                    if(item.getIdxPregunta() == 4){
                         imagen.setAlpha(1f);
                     }
                 }
-            }, 2000);*/
-            //puntos.setText("" + pts);
-            //GameMusic.stop();
+            }, 2000);
 
-            //startActivity(result);
-            //finish();
+            ((Pregunta) getActivity()).changeActivity();
         }
 
         //puntos.setText("" + pts);

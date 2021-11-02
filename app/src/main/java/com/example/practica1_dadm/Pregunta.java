@@ -29,6 +29,8 @@ public class Pregunta extends AppCompatActivity {
     int numPreguntas2;
     List<Item> items;
     public int idxpreguntaActual;
+    int puntos;
+    public String nombreJugador;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class Pregunta extends AppCompatActivity {
         MediaPlayer gameMusic = MediaPlayer.create(Pregunta.this, R.raw.questionmusic);
         gameMusic.start();
 
+        nombreJugador = getIntent().getStringExtra("nombre");
         numPreguntas = getIntent().getStringExtra("numPreguntas");
         numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
 
@@ -55,29 +58,25 @@ public class Pregunta extends AppCompatActivity {
 
         switch(items.get(0).getTipoPregunta()) {
             case 0:
-                items.remove(0);
                 ft.replace(R.id.preguntaFrameLayout, new PreguntaTexto());
                 break;
 
             case 1:
-                items.remove(0);
                 ft.replace(R.id.preguntaFrameLayout, new PreguntaAudio());
                 break;
         }
         ft.commit();
-
     }
 
     public void next(){
         FragmentTransaction fts = getSupportFragmentManager().beginTransaction();
+        items.remove(0);
         switch(items.get(0).getTipoPregunta()) {
             case 0:
-                items.remove(0);
                 fts.replace(R.id.preguntaFrameLayout, new PreguntaTexto());
                 break;
 
             case 1:
-                items.remove(0);
                 fts.replace(R.id.preguntaFrameLayout, new PreguntaAudio());
                 break;
         }
@@ -263,6 +262,17 @@ public class Pregunta extends AppCompatActivity {
 
         return repo;
     }
+
+    public void changeActivity(){
+        Intent result = new Intent(Pregunta.this, Result.class);
+        result.putExtra("puntos", "puntos");
+        result.putExtra("nombre", nombreJugador);
+        //GameMusic.stop();
+
+        startActivity(result);
+        finish();
+    }
+
     /*
     AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
     ItemDAO dao = db.itemDAO();

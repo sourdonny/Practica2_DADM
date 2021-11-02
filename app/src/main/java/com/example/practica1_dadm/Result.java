@@ -27,11 +27,11 @@ public class Result extends AppCompatActivity {
 
         nombre = getIntent().getStringExtra("nombre");
         nombreJugador = (TextView)findViewById(R.id.nombreEditText);
-        nombreJugador.setText("JUGADOR: " + nombre);
+        //nombreJugador.setText("JUGADOR: " + nombre);
 
         pts = getIntent().getStringExtra("puntos");
         puntuacion = (TextView)findViewById(R.id.textView4);
-        puntuacion.setText(nombre + ", HAS CONSEGUIDO " + pts + "PUNTOS");
+        //puntuacion.setText(nombre + ", HAS CONSEGUIDO " + pts + "PUNTOS");
     }
 
     public void VolverMenuPrincipal(View view){
