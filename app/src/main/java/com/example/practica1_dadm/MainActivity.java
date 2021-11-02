@@ -67,6 +67,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onStop() {
+        titleMusic.release();
+        titleMusic = null;
+        super.onStop();
+    }
+
     public void Jugar(View view){
         titleMusic.stop();
         Intent introducirNombre = new Intent(this, Name.class);
