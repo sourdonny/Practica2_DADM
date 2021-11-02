@@ -135,11 +135,12 @@ public class PreguntaAudio extends Fragment {
         for(int i = 0; i < botones.length; i++){
             botones[i].setEnabled(false);
         }
-        if(pregTotales < ((Pregunta)getActivity()).items.size() - 1) {
+        if(pregTotales < ((Pregunta)getActivity()).getNumPreguntas2()) {
             if (id == idCorrect) {
-                pts += 10;
+                ((Pregunta) getActivity()).acertado();
                 botones[id].setBackgroundColor(Color.GREEN);
             } else {
+                ((Pregunta) getActivity()).fallado();
                 botones[id].setBackgroundColor(Color.RED);
             }
             pregTotales++;
@@ -158,9 +159,10 @@ public class PreguntaAudio extends Fragment {
 
         }else {
             if (id == idCorrect) {
-                pts += 10;
+                ((Pregunta) getActivity()).acertado();
                 botones[id].setBackgroundColor(Color.GREEN);
             } else {
+                ((Pregunta) getActivity()).fallado();
                 botones[id].setBackgroundColor(Color.RED);
             }
 
@@ -178,7 +180,6 @@ public class PreguntaAudio extends Fragment {
             ((Pregunta) getActivity()).changeActivity();
         }
 
-        //puntos.setText("" + pts);
     }
 
     private int config(int preguntaActual, List<Integer> rspst){

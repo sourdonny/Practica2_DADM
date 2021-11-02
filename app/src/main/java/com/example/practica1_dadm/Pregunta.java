@@ -25,10 +25,11 @@ import java.util.List;
 
 public class Pregunta extends AppCompatActivity {
 
-    String numPreguntas;
     int numPreguntas2;
     List<Item> items;
     public int idxpreguntaActual;
+    public int preguntasAcertadas;
+    public int preguntasFalladas;
     int puntos;
     public String nombreJugador;
     MediaPlayer gameMusic;
@@ -42,7 +43,6 @@ public class Pregunta extends AppCompatActivity {
         //gameMusic.start();
 
         nombreJugador = getIntent().getStringExtra("nombre");
-        numPreguntas = getIntent().getStringExtra("numPreguntas");
         numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
 
         AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
@@ -50,6 +50,7 @@ public class Pregunta extends AppCompatActivity {
         ItemRepositoryImpl repo = new ItemRepositoryImpl(dao);
 
         //repo = GeneratePreguntas(repo);
+        idxpreguntaActual = 1;
 
         items = repo.getAllItems();
 
@@ -61,7 +62,6 @@ public class Pregunta extends AppCompatActivity {
             case 0:
                 ft.replace(R.id.preguntaFrameLayout, new PreguntaTexto());
                 break;
-
             case 1:
                 ft.replace(R.id.preguntaFrameLayout, new PreguntaAudio());
                 break;
@@ -71,6 +71,7 @@ public class Pregunta extends AppCompatActivity {
 
     public void next(){
         FragmentTransaction fts = getSupportFragmentManager().beginTransaction();
+        idxpreguntaActual++;
         items.remove(0);
         switch(items.get(0).getTipoPregunta()) {
             case 0:
@@ -83,8 +84,20 @@ public class Pregunta extends AppCompatActivity {
         }
         fts.commit();
     }
-/*
-    public void pararMusic(){
+
+    public void acertado(){
+        preguntasAcertadas++;
+    }
+
+    public void fallado(){
+        preguntasFalladas++;
+    }
+
+    public int getNumPreguntas2(){
+        return numPreguntas2;
+    }
+
+/*public void pararMusic(){
         if(gameMusic.isPlaying()){
             gameMusic.pause();
         } else {
