@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/personajeImageView"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:src="@drawable/whitesquare" />
 
@@ -52,7 +52,7 @@
             android:layout_height="261dp"
             android:layout_gravity="center"
             android:translationX="0dp"
-            android:translationY="215dp">
+            android:translationY="200dp">
 
             <Button
                 android:id="@+id/respuesta1Button"
