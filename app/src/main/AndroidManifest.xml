@@ -11,6 +11,9 @@
         android:theme="@style/TriviaTheme"
         android:windowSoftInputMode="adjustResize">
         <activity
+            android:name=".Ranking"
+            android:exported="true" />
+        <activity
             android:name=".Name"
             android:exported="true" />
         <activity

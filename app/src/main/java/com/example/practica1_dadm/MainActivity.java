@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button jugar;
     Button ajustes;
     Button salir;
+    Button ranking;
     String numPreguntas;
     int numPreguntas2;
 
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         jugar = findViewById(R.id.jugarButton);
         ajustes = findViewById(R.id.ajustesButton);
         salir = findViewById(R.id.salirButton);
+        ranking = findViewById(R.id.rankingButton);
 
         jugar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,24 +60,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ranking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Ranking(view);
+            }
+        });
     }
 
     public void Jugar(View view){
         Intent introducirNombre = new Intent(this, Name.class);
         introducirNombre.putExtra("numPreguntas", numPreguntas);
         introducirNombre.putExtra("numPreguntas2", numPreguntas2);
-        titleMusic.stop();
         startActivity(introducirNombre);
     }
 
     public void Ajustes(View view){
         Intent ajustes = new Intent(this, Ajustes.class);
         startActivity(ajustes);
-        finish();
+        //finish();
     }
 
     public void Salir(View view){
         titleMusic.stop();
         finish();
+    }
+
+    public void Ranking(View view){
+        Intent ranking = new Intent(this, Ranking.class);
+        startActivity(ranking);
     }
 }

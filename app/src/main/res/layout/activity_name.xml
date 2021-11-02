@@ -53,6 +53,8 @@
         android:layout_width="350dp"
         android:layout_height="350dp"
         android:foregroundGravity="center"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
         app:cardBackgroundColor="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -9,53 +9,6 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/jugarButton"
-        android:layout_width="215dp"
-        android:layout_height="140dp"
-        android:background="@drawable/pressed_play_button_effect"
-        android:fontFamily="@font/bungee"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        app:iconTint="#00FF3838"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloImageView"
-        app:layout_constraintVertical_bias="0.100000024"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/salirButton"
-        android:layout_width="167dp"
-        android:layout_height="107dp"
-        android:background="@drawable/pressed_exit_button_effect"
-        android:fontFamily="@font/bungee"
-        android:gravity="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ajustesButton"
-        app:layout_constraintTop_toBottomOf="@+id/jugarButton"
-        app:layout_constraintVertical_bias="0.252"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <Button
-        android:id="@+id/ajustesButton"
-        android:layout_width="167dp"
-        android:layout_height="107dp"
-        android:background="@drawable/pressed_settings_button_effect"
-        android:fontFamily="@font/bungee"
-        android:gravity="center"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/salirButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jugarButton"
-        app:layout_constraintVertical_bias="0.25"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <ImageView
         android:id="@+id/tituloImageView"
         android:layout_width="350dp"
@@ -72,6 +25,7 @@
         android:id="@+id/logoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
         android:fontFamily="@font/bungee"
         android:shadowColor="#FFFFFF"
         android:shadowDx="2"
@@ -84,7 +38,72 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/logoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/salirButton" />
+        app:layout_constraintTop_toBottomOf="@+id/tituloImageView"
+        app:layout_constraintVertical_bias="0.16000003">
+
+        <Button
+            android:id="@+id/jugarButton"
+            android:layout_width="201dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/pressed_play_button_effect"
+            android:fontFamily="@font/bungee"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            app:iconTint="#00FF3838"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/rankingButton"
+            android:layout_width="201dp"
+            android:layout_height="135dp"
+            android:layout_gravity="center"
+            android:background="@drawable/pressed_ranking_button_effect"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/logoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.3">
+
+        <Button
+            android:id="@+id/ajustesButton"
+            android:layout_width="201dp"
+            android:layout_height="133dp"
+            android:background="@drawable/pressed_settings_button_effect"
+            android:fontFamily="@font/bungee"
+            android:gravity="center"
+            android:textSize="34sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/salirButton"
+            android:layout_width="201dp"
+            android:layout_height="133dp"
+            android:background="@drawable/pressed_exit_button_effect"
+            android:fontFamily="@font/bungee"
+            android:gravity="center"
+            android:textSize="34sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

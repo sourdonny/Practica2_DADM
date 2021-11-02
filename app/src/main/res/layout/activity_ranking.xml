@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/settingsbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ranking">
+
+    <ImageView
+        android:id="@+id/rankingTitulomageView"
+        android:layout_width="249dp"
+        android:layout_height="146dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024"
+        app:srcCompat="@drawable/rankingtitle" />
+
+    <Button
+        android:id="@+id/menuPrincipalButton2"
+        android:layout_width="144dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/pressed_mainmenu_button_effect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="333dp"
+        android:layout_height="305dp"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/menuPrincipalButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rankingTitulomageView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationX="-7dp">
+
+            <TextView
+                android:id="@+id/puesto1"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="1"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/puesto1nombre"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="NOMBRE 1"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/puesto1puntos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="0"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationX="-7dp">
+
+            <TextView
+                android:id="@+id/puesto2"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="2"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/puesto2nombre"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="NOMBRE 2"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/puesto2puntos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="0"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationX="-7dp">
+
+            <TextView
+                android:id="@+id/puesto3"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="3"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/puesto3nombre"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="NOMBRE 3"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/puesto3puntos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="0"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationX="-7dp">
+
+            <TextView
+                android:id="@+id/puesto4"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="4"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/puesto4nombre"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="NOMBRE 4"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/puesto4puntos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="0"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:translationX="-7dp">
+
+            <TextView
+                android:id="@+id/puesto5"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="5"
+                android:textAlignment="textEnd"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/puesto5nombre"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="NOMBRE 5"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/puesto5puntos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bungee"
+                android:text="0"
+                android:textAlignment="textStart"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
