@@ -4,7 +4,7 @@
 
     //Preguntas
     //Pregunta 1
-    <string name="pregunta1">"¿Quien es mas poderoso?"</string>
+    <string name="pregunta1">"En Hunter x Hunter, ¿cuál de estos personaje es el que posee mayor poder?"</string>
     <string name="respuesta11">"Meruem"</string>
     <string name="respuesta12">"Chrollo"</string>
     <string name="respuesta13">"Hisoka"</string>
@@ -12,7 +12,7 @@
     <integer name="tipoPregunta1">0</integer>
 
     //Pregunta 2
-    <string name="pregunta2">¿Quién es el lider del Shie Hassaikai de Boku No Hero Academia?</string>
+    <string name="pregunta2">En My Hero Academia, ¿quién es el lider del Shie Hassaikai?</string>
     <string name="respuesta21">"Overhaul"</string>
     <string name="respuesta22">"Mineta"</string>
     <string name="respuesta23">"Kendo Rappa"</string>
@@ -20,7 +20,7 @@
     <integer name="tipoPregunta2">0</integer>
 
     //Pregunta 3
-    <string name="pregunta3">¿Cómo se llama la chica con la que Denji está obsesionado?</string>
+    <string name="pregunta3">En Chainsaw Man, ¿cómo se llama la chica con la que Denji está obsesionado?</string>
     <string name="respuesta31">"Makima"</string>
     <string name="respuesta32">"Power"</string>
     <string name="respuesta33">"Himeno"</string>
@@ -28,7 +28,7 @@
     <integer name="tipoPregunta3">0</integer>
 
     //Pregunta 4
-    <string name="pregunta4">¿Quién está luchando junto a Tanjiro, Zenitsu e Inosuke en el tren?</string>
+    <string name="pregunta4">En Demon Slayer, ¿quién está luchando junto a Tanjiro, Zenitsu e Inosuke en el tren?</string>
     <string name="respuesta41">"Rengoku"</string>
     <string name="respuesta42">"Shinobu"</string>
     <string name="respuesta43">"Tomioka"</string>
@@ -36,7 +36,7 @@
     <integer name="tipoPregunta4">0</integer>
 
     //Pregunta 5
-    <string name="pregunta5">¿Cuál es el apodo que recibe Mikey de Tokyo Revengers?</string>
+    <string name="pregunta5">En Tokyo Revengers, ¿cuál es el apodo que recibe Mikey?</string>
     <string name="respuesta51">"El invencible"</string>
     <string name="respuesta52">"El imbatible"</string>
     <string name="respuesta53">"El guapo"</string>
@@ -52,7 +52,7 @@
     <integer name="tipoPregunta6">0</integer>
 
     //Pregunta 7
-    <string name="pregunta7">¿Cuál es la posición de Tobio Kageyama en el equipo de voleibol?</string>
+    <string name="pregunta7">En Haikyuu, ¿cuál es la posición de Tobio Kageyama en el equipo de voleibol?</string>
     <string name="respuesta71">"Colocador"</string>
     <string name="respuesta72">"Receptor"</string>
     <string name="respuesta73">"Libero"</string>
@@ -60,7 +60,7 @@
     <integer name="tipoPregunta7">0</integer>
 
     //Pregunta 8
-    <string name="pregunta8">¿Cómo se llama la orden de magos a la que pertenece Asta?</string>
+    <string name="pregunta8">En Black Clover, ¿cómo se llama la orden de magos a la que pertenece Asta?</string>
     <string name="respuesta81">"Toros negros"</string>
     <string name="respuesta82">"Amanecer dorado"</string>
     <string name="respuesta83">"Águilas plateadas"</string>
@@ -68,7 +68,7 @@
     <integer name="tipoPregunta8">0</integer>
 
     //Pregunta 9
-    <string name="pregunta9">¿Cómo se llama el hermano de Shinra?</string>
+    <string name="pregunta9">En Fire Force, ¿cómo se llama el hermano de Shinra Kusakabe?</string>
     <string name="respuesta91">"Sho"</string>
     <string name="respuesta92">"Vulkan"</string>
     <string name="respuesta93">"Arthur"</string>
@@ -76,7 +76,7 @@
     <integer name="tipoPregunta9">0</integer>
 
     //Pregunta 10
-    <string name="pregunta10">¿Cómo se llama la maldición que tiene Yuuji Itadori dentro?</string>
+    <string name="pregunta10">En Jujutsu Kaisen, ¿cómo se llama la maldición que tiene Yuuji Itadori dentro?</string>
     <string name="respuesta101">"Sukuna"</string>
     <string name="respuesta102">"Choso"</string>
     <string name="respuesta103">"Mahito"</string>
@@ -84,7 +84,7 @@
     <integer name="tipoPregunta10">0</integer>
 
     //Pregunta 11
-    <string name="pregunta11">¿Qué detesta Edward Elric?</string>
+    <string name="pregunta11">En Fullmetal Alchemist Brotherhood, ¿qué detesta Edward Elric?</string>
     <string name="respuesta111">"La leche"</string>
     <string name="respuesta112">"El pan"</string>
     <string name="respuesta113">"El metal"</string>
@@ -100,7 +100,7 @@
     <integer name="tipoPregunta12">0</integer>
 
     //Pregunta 13
-    <string name="pregunta13">¿A qué anime pertenece este opening? (Black Catcher de Black Clover)</string>
+    <string name="pregunta13">¿A qué anime pertenece este opening?</string>
     <string name="respuesta131">"Black Clover"</string>
     <string name="respuesta132">"My Hero Academia"</string>
     <string name="respuesta133">"Jujutsu Kaisen"</string>
@@ -108,7 +108,7 @@
     <integer name="tipoPregunta13">0</integer>
 
     //Pregunta 14
-    <string name="pregunta14">¿A qué personaje pertenece este grito? (El "MUEREEEEE" de Bakugo)</string>
+    <string name="pregunta14">¿A qué personaje pertenece este grito?</string>
     <string name="respuesta141">"Bakugo Katsuki"</string>
     <string name="respuesta142">"Asta"</string>
     <string name="respuesta143">"Shoyo Hinata"</string>
@@ -123,10 +123,69 @@
     <string name="respuesta154">"Mahito"</string>
     <integer name="tipoPregunta15">0</integer>
 
+    //Pregunta 16
+    <string name="pregunta16">¿Qué personaje dice esto?</string>
+    <string name="respuesta161">"Shoyo Hinata"</string>
+    <string name="respuesta162">"Shinra Kusakabe"</string>
+    <string name="respuesta163">"Tobio Kageyama"</string>
+    <string name="respuesta164">"Nishinoya Yuu"</string>
+    <integer name="tipoPregunta16">0</integer>
 
+    //Pregunta 17
+    <string name="pregunta17">¿A qué serie pertenece este ending?</string>
+    <string name="respuesta171">"My Hero Academia"</string>
+    <string name="respuesta172">"Jojo's Bizarre Adventure"</string>
+    <string name="respuesta173">"Demon Slayer"</string>
+    <string name="respuesta174">"Haikyuu"</string>
+    <integer name="tipoPregunta17">0</integer>
 
+    //Pregunta 18
+    <string name="pregunta18">¿Cuál es el título de este opening de Fire Force?</string>
+    <string name="respuesta181">"Mayday"</string>
+    <string name="respuesta182">"Inferno"</string>
+    <string name="respuesta183">"Torch of Liberty"</string>
+    <string name="respuesta184">"Playing with Fire"</string>
+    <integer name="tipoPregunta18">0</integer>
 
+    //Pregunta 19
+    <string name="pregunta19">¿Cómo se llama el primer opening de Fullmetal Alchemist Brotherhood?</string>
+    <string name="respuesta191">"Again"</string>
+    <string name="respuesta192">"Hologram"</string>
+    <string name="respuesta193">"Golden Time Lover"</string>
+    <string name="respuesta194">"Period"</string>
+    <integer name="tipoPregunta19">0</integer>
 
+    //Pregunta 20
+    <string name="pregunta20">¿Cuál es el nombre de la artista que hizo el primer opening de Demon Slayer?</string>
+    <string name="respuesta201">"LiSA"</string>
+    <string name="respuesta202">"Rosé"</string>
+    <string name="respuesta203">"Jennie"</string>
+    <string name="respuesta204">"Jisoo"</string>
+    <integer name="tipoPregunta20">0</integer>
+
+    //Pregunta 21
+    <string name="pregunta21">¿Cómo se llama el personaje al que pertenece esta expresión?</string>
+    <string name="respuesta211">"Dio"</string>
+    <string name="respuesta212">"Kira Yoshikage"</string>
+    <string name="respuesta213">"Diavolo"</string>
+    <string name="respuesta214">"Jotaro Joestar"</string>
+    <integer name="tipoPregunta21">0</integer>
+
+    //Pregunta 22
+    <string name="pregunta22">¿A quépersonaje pertence este tema?</string>
+    <string name="respuesta221">"Giorno Giovanna"</string>
+    <string name="respuesta222">"Joseph Joestar"</string>
+    <string name="respuesta223">"Guido Mista"</string>
+    <string name="respuesta224">"Diavolo"</string>
+    <integer name="tipoPregunta22">0</integer>
+
+    //Pregunta 23
+    <string name="pregunta23">¿A qué serie pertenece este opening?</string>
+    <string name="respuesta231">"Hunter x Hunter"</string>
+    <string name="respuesta232">"Jujutsu Kaisen"</string>
+    <string name="respuesta233">"Tokyo Revengers"</string>
+    <string name="respuesta234">"Given"</string>
+    <integer name="tipoPregunta23">0</integer>
 
     //Tutorial
     <string name="introductionText">¡BIENVENIDO A SHONEN QUIZ!\n\nEN ESTE CONCURSO PODRÁS DEMOSTRAR QUE ERES EL VERDADERO PROTAGONISTA DE TU SERIE DE ACCIÓN GENÉRICA</string>
