@@ -499,6 +499,7 @@ public class Pregunta extends AppCompatActivity {
                 botones[id].setBackgroundColor(Color.RED);
             }
             idxpreguntaActual++;
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             botones[id].postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -508,6 +509,7 @@ public class Pregunta extends AppCompatActivity {
                     }
                 }
             }, 2000);
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         }else {
             if (id == idCorrect) {
                 pts += 10;
@@ -515,6 +517,7 @@ public class Pregunta extends AppCompatActivity {
             } else {
                 botones[id].setBackgroundColor(Color.RED);
             }
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             botones[id].postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -524,6 +527,7 @@ public class Pregunta extends AppCompatActivity {
                     }
                 }
             }, 2000);
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             puntos.setText("" + pts);
             Intent result = new Intent(Pregunta.this, Result.class);
             result.putExtra("puntos", "puntos");

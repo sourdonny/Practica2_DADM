@@ -2,6 +2,7 @@ package com.example.practica1_dadm;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -30,11 +31,22 @@ public class PreguntaTexto extends Fragment {
     protected int idCorrect;
     private int pregTotales = 0;
     private int pts = 0;
+    ImageView[] imagenes = new ImageView[12];
+    ImageView img;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_pregunta_texto, container, false);
+
+        //imagenes[0] = ImageView.create(getActivity(), R.raw.blackcatcher);
+        //////////////////////////////AQUI LAS IMAGENES/////////////
+
+
+
+
+        ///////////////////////////////////////////////////////////
+
 
         idCorrect = 0;
         botones[0] = (Button) root.findViewById(R.id.respuesta1Button);
@@ -56,6 +68,8 @@ public class PreguntaTexto extends Fragment {
         respuestas.add(item.getRespuesta4());
 
         idCorrect = config(item.getIdxPregunta(), respuestas);
+
+        img = (ImageView) root.findViewById((R.id.personajeImageView));     // Aqui meto la imagen en el coso de imagenes del layout
 
         botones[0].setOnClickListener(new View.OnClickListener() {
             @Override
@@ -153,6 +167,39 @@ public class PreguntaTexto extends Fragment {
             botones[i].setBackgroundColor(Color.WHITE);
             //botones[i].setBackgroundColor(Color.alpha(0));
             botones[i].setEnabled(true);
+        }
+
+        switch (item.getIdxPregunta()){
+            case 12:
+                img = imagenes[0];
+                break;
+            case 13:
+                img = imagenes[1];
+                break;
+            case 14:
+                img = imagenes[9];
+                break;
+            case 15:
+                img = imagenes[2];
+                break;
+            case 16:
+                img = imagenes[3];
+                break;
+            case 17:
+                img = imagenes[4];
+                break;
+            case 18:
+                img = imagenes[5];
+                break;
+            case 19:
+                img = imagenes[6];
+                break;
+            case 20:
+                img = imagenes[7];
+                break;
+            case 21:
+                img = imagenes[8];
+                break;
         }
 
         return idxCorrect;
