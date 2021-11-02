@@ -27,12 +27,14 @@ public class Pregunta extends AppCompatActivity {
 
     int numPreguntas2;
     List<Item> items;
-    public int idxpreguntaActual;
-    public int preguntasAcertadas;
-    public int preguntasFalladas;
+    public int idxpreguntaActual = 1;
+    public int preguntasAcertadas = 0;
+    public int preguntasFalladas = 0;
     int puntos;
     public String nombreJugador;
     MediaPlayer gameMusic;
+    private TextView acertadas;
+    private TextView falladas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +44,12 @@ public class Pregunta extends AppCompatActivity {
         gameMusic = MediaPlayer.create(Pregunta.this, R.raw.questionmusic);
         //gameMusic.start();
 
+        acertadas = (TextView) findViewById(R.id.textAcertadas);
+        falladas = (TextView) findViewById(R.id.textFalladas);
         nombreJugador = getIntent().getStringExtra("nombre");
         numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
+        acertadas.setText(preguntasAcertadas + "/" + numPreguntas2);
+        falladas.setText(preguntasFalladas + "/" + numPreguntas2);
 
         AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());
         ItemDAO dao = db.itemDAO();
@@ -70,6 +76,8 @@ public class Pregunta extends AppCompatActivity {
     }
 
     public void next(){
+        acertadas.setText(preguntasAcertadas + "/" + numPreguntas2);
+        falladas.setText(preguntasFalladas + "/" + numPreguntas2);
         FragmentTransaction fts = getSupportFragmentManager().beginTransaction();
         idxpreguntaActual++;
         items.remove(0);
@@ -354,7 +362,8 @@ public class Pregunta extends AppCompatActivity {
 
     public void changeActivity(){
         Intent result = new Intent(Pregunta.this, Result.class);
-        result.putExtra("puntos", "puntos");
+        result.putExtra("numPreguntas2", numPreguntas2);
+        result.putExtra("preguntasAcertadas", preguntasAcertadas);
         result.putExtra("nombre", nombreJugador);
         //GameMusic.stop();
 

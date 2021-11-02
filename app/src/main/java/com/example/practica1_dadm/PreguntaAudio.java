@@ -153,7 +153,7 @@ public class PreguntaAudio extends Fragment {
                         imagen.setAlpha(1f);
                     }
                 }
-            }, 2000);
+            }, 20000);
             audioQuestion.stop();
             ((Pregunta) getActivity()).next();
 
@@ -171,10 +171,10 @@ public class PreguntaAudio extends Fragment {
                 public void run() {
                     idCorrect = config(item.getTitulo(), respuestas);
                     if(item.getIdxPregunta() == 4){
-                        imagen.setAlpha(1f);
+                        imagen.setAlpha(0f);
                     }
                 }
-            }, 2000);
+            }, 20000);
 
             audioQuestion.stop();
             ((Pregunta) getActivity()).changeActivity();

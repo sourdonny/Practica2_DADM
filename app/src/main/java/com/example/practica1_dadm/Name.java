@@ -41,9 +41,8 @@ public class Name extends AppCompatActivity {
 
     public void Empezar(View view){
         Intent preguntas = new Intent(this, Pregunta.class);
-        preguntas.putExtra("numPreguntas", numPreguntas);
         preguntas.putExtra("numPreguntas2", numPreguntas2);
-        //preguntas.putExtra("nombre", nombreEditText.toString());
+        preguntas.putExtra("nombre", nombreEditText.getText().toString());
         startActivity(preguntas);
         finish();
     }

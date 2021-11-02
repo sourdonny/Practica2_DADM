@@ -56,20 +56,38 @@
             android:layout_gravity="center"
             app:srcCompat="@drawable/resultbox" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="202dp"
-            android:layout_gravity="center"
-            android:alpha="1"
-            android:fontFamily="@font/bungee"
-            android:gravity="center"
-            android:text="PUNTUACIÓN"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-            android:textColor="#000000"
-            android:textSize="34sp"
-            android:translationX="-10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:alpha="1"
+                android:fontFamily="@font/bungee"
+                android:gravity="center"
+                android:text="Nombre"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:translationX="-10dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="217dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:fontFamily="@font/bungee"
+                android:text="Acertadas"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="48sp"
+                android:translationX="-10dp" />
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 

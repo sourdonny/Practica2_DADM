@@ -10,8 +10,9 @@ import android.widget.TextView;
 
 public class Result extends AppCompatActivity {
 
-    public String nombre;
-    public String pts;
+    public String nombre = "Default Name";
+    public int acertadas = 0;
+    public int numPreguntas2 = 0;
 
     private TextView nombreJugador;
     private TextView puntuacion;
@@ -25,13 +26,13 @@ public class Result extends AppCompatActivity {
         resultmusic = MediaPlayer.create(Result.this, R.raw.resultmusic);
         resultmusic.start();
 
+        nombreJugador = (TextView)findViewById(R.id.textView4);
+        puntuacion = (TextView)findViewById(R.id.textView);
         nombre = getIntent().getStringExtra("nombre");
-        nombreJugador = (TextView)findViewById(R.id.nombreEditText);
-        //nombreJugador.setText("JUGADOR: " + nombre);
-
-        pts = getIntent().getStringExtra("puntos");
-        puntuacion = (TextView)findViewById(R.id.textView4);
-        //puntuacion.setText(nombre + ", HAS CONSEGUIDO " + pts + "PUNTOS");
+        acertadas = getIntent().getIntExtra("preguntasAcertadas", 5);
+        numPreguntas2 = getIntent().getIntExtra("numPreguntas2", 5);
+        nombreJugador.setText("JUGADOR: \n" + nombre);
+        puntuacion.setText(acertadas + "/" + numPreguntas2);
     }
 
     public void VolverMenuPrincipal(View view){
