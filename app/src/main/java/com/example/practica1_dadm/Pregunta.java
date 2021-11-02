@@ -31,14 +31,15 @@ public class Pregunta extends AppCompatActivity {
     public int idxpreguntaActual;
     int puntos;
     public String nombreJugador;
+    MediaPlayer gameMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pregunta);
 
-        MediaPlayer gameMusic = MediaPlayer.create(Pregunta.this, R.raw.questionmusic);
-        gameMusic.start();
+        gameMusic = MediaPlayer.create(Pregunta.this, R.raw.questionmusic);
+        //gameMusic.start();
 
         nombreJugador = getIntent().getStringExtra("nombre");
         numPreguntas = getIntent().getStringExtra("numPreguntas");
@@ -82,6 +83,14 @@ public class Pregunta extends AppCompatActivity {
         }
         fts.commit();
     }
+/*
+    public void pararMusic(){
+        if(gameMusic.isPlaying()){
+            gameMusic.pause();
+        } else {
+            gameMusic.start();
+        }
+    }*/
 
     public ItemRepositoryImpl GeneratePreguntas(ItemRepositoryImpl repo){
 
@@ -233,11 +242,78 @@ public class Pregunta extends AppCompatActivity {
         item.setRespuesta3(R.string.respuesta153);
         item.setRespuesta4(R.string.respuesta154);
         item.setRespuestaCorrecta(R.string.respuesta151);
-        item.setTipoPregunta(0);
+        item.setTipoPregunta(1);
         repo.InsertItem(item);
 
+        item.setIdxPregunta(15);
+        item.setTitulo(R.string.pregunta15);
+        item.setRespuesta1(R.string.respuesta161);
+        item.setRespuesta2(R.string.respuesta162);
+        item.setRespuesta3(R.string.respuesta163);
+        item.setRespuesta4(R.string.respuesta164);
+        item.setRespuestaCorrecta(R.string.respuesta161);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
 
+        item.setIdxPregunta(16);
+        item.setTitulo(R.string.pregunta17);
+        item.setRespuesta1(R.string.respuesta171);
+        item.setRespuesta2(R.string.respuesta172);
+        item.setRespuesta3(R.string.respuesta173);
+        item.setRespuesta4(R.string.respuesta174);
+        item.setRespuestaCorrecta(R.string.respuesta171);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
 
+        item.setIdxPregunta(17);
+        item.setTitulo(R.string.pregunta18);
+        item.setRespuesta1(R.string.respuesta181);
+        item.setRespuesta2(R.string.respuesta182);
+        item.setRespuesta3(R.string.respuesta183);
+        item.setRespuesta4(R.string.respuesta184);
+        item.setRespuestaCorrecta(R.string.respuesta181);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(18);
+        item.setTitulo(R.string.pregunta19);
+        item.setRespuesta1(R.string.respuesta191);
+        item.setRespuesta2(R.string.respuesta192);
+        item.setRespuesta3(R.string.respuesta193);
+        item.setRespuesta4(R.string.respuesta194);
+        item.setRespuestaCorrecta(R.string.respuesta191);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(19);
+        item.setTitulo(R.string.pregunta20);
+        item.setRespuesta1(R.string.respuesta201);
+        item.setRespuesta2(R.string.respuesta202);
+        item.setRespuesta3(R.string.respuesta203);
+        item.setRespuesta4(R.string.respuesta204);
+        item.setRespuestaCorrecta(R.string.respuesta201);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(20);
+        item.setTitulo(R.string.pregunta21);
+        item.setRespuesta1(R.string.respuesta211);
+        item.setRespuesta2(R.string.respuesta212);
+        item.setRespuesta3(R.string.respuesta213);
+        item.setRespuesta4(R.string.respuesta214);
+        item.setRespuestaCorrecta(R.string.respuesta211);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(21);
+        item.setTitulo(R.string.pregunta22);
+        item.setRespuesta1(R.string.respuesta221);
+        item.setRespuesta2(R.string.respuesta222);
+        item.setRespuesta3(R.string.respuesta223);
+        item.setRespuesta4(R.string.respuesta224);
+        item.setRespuestaCorrecta(R.string.respuesta221);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
 
 /*
         for(int i = 1; i < 15; i++){

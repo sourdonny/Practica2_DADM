@@ -105,7 +105,7 @@
     <string name="respuesta132">"My Hero Academia"</string>
     <string name="respuesta133">"Jujutsu Kaisen"</string>
     <string name="respuesta134">"Black Mamba"</string>
-    <integer name="tipoPregunta13">0</integer>
+    <integer name="tipoPregunta13">1</integer>
 
     //Pregunta 14
     <string name="pregunta14">¿A qué personaje pertenece este grito?</string>
@@ -113,15 +113,15 @@
     <string name="respuesta142">"Asta"</string>
     <string name="respuesta143">"Shoyo Hinata"</string>
     <string name="respuesta144">"Nezuko"</string>
-    <integer name="tipoPregunta14">0</integer>
+    <integer name="tipoPregunta14">1</integer>
 
     //Pregunta 15
-    <string name="pregunta15">¿Cómo  de Jujutsu Kaisen?</string>
-    <string name="respuesta151">"Sukuna"</string>
-    <string name="respuesta152">"Jogo"</string>
-    <string name="respuesta153">"Gojo"</string>
-    <string name="respuesta154">"Mahito"</string>
-    <integer name="tipoPregunta15">0</integer>
+    <string name="pregunta15">¿A qué serie pertenece este opening?</string>
+    <string name="respuesta151">"Hunter x Hunter"</string>
+    <string name="respuesta152">"Jujutsu Kaisen"</string>
+    <string name="respuesta153">"Tokyo Revengers"</string>
+    <string name="respuesta154">"Given"</string>
+    <integer name="tipoPregunta15">1</integer>
 
     //Pregunta 16
     <string name="pregunta16">¿Qué personaje dice esto?</string>
@@ -129,7 +129,7 @@
     <string name="respuesta162">"Shinra Kusakabe"</string>
     <string name="respuesta163">"Tobio Kageyama"</string>
     <string name="respuesta164">"Nishinoya Yuu"</string>
-    <integer name="tipoPregunta16">0</integer>
+    <integer name="tipoPregunta16">1</integer>
 
     //Pregunta 17
     <string name="pregunta17">¿A qué serie pertenece este ending?</string>
@@ -137,7 +137,7 @@
     <string name="respuesta172">"Jojo's Bizarre Adventure"</string>
     <string name="respuesta173">"Demon Slayer"</string>
     <string name="respuesta174">"Haikyuu"</string>
-    <integer name="tipoPregunta17">0</integer>
+    <integer name="tipoPregunta17">1</integer>
 
     //Pregunta 18
     <string name="pregunta18">¿Cuál es el título de este opening de Fire Force?</string>
@@ -145,7 +145,7 @@
     <string name="respuesta182">"Inferno"</string>
     <string name="respuesta183">"Torch of Liberty"</string>
     <string name="respuesta184">"Playing with Fire"</string>
-    <integer name="tipoPregunta18">0</integer>
+    <integer name="tipoPregunta18">1</integer>
 
     //Pregunta 19
     <string name="pregunta19">¿Cómo se llama el primer opening de Fullmetal Alchemist Brotherhood?</string>
@@ -153,7 +153,7 @@
     <string name="respuesta192">"Hologram"</string>
     <string name="respuesta193">"Golden Time Lover"</string>
     <string name="respuesta194">"Period"</string>
-    <integer name="tipoPregunta19">0</integer>
+    <integer name="tipoPregunta19">1</integer>
 
     //Pregunta 20
     <string name="pregunta20">¿Cuál es el nombre de la artista que hizo el primer opening de Demon Slayer?</string>
@@ -161,7 +161,7 @@
     <string name="respuesta202">"Rosé"</string>
     <string name="respuesta203">"Jennie"</string>
     <string name="respuesta204">"Jisoo"</string>
-    <integer name="tipoPregunta20">0</integer>
+    <integer name="tipoPregunta20">1</integer>
 
     //Pregunta 21
     <string name="pregunta21">¿Cómo se llama el personaje al que pertenece esta expresión?</string>
@@ -169,7 +169,7 @@
     <string name="respuesta212">"Kira Yoshikage"</string>
     <string name="respuesta213">"Diavolo"</string>
     <string name="respuesta214">"Jotaro Joestar"</string>
-    <integer name="tipoPregunta21">0</integer>
+    <integer name="tipoPregunta21">1</integer>
 
     //Pregunta 22
     <string name="pregunta22">¿A quépersonaje pertence este tema?</string>
@@ -177,15 +177,7 @@
     <string name="respuesta222">"Joseph Joestar"</string>
     <string name="respuesta223">"Guido Mista"</string>
     <string name="respuesta224">"Diavolo"</string>
-    <integer name="tipoPregunta22">0</integer>
-
-    //Pregunta 23
-    <string name="pregunta23">¿A qué serie pertenece este opening?</string>
-    <string name="respuesta231">"Hunter x Hunter"</string>
-    <string name="respuesta232">"Jujutsu Kaisen"</string>
-    <string name="respuesta233">"Tokyo Revengers"</string>
-    <string name="respuesta234">"Given"</string>
-    <integer name="tipoPregunta23">0</integer>
+    <integer name="tipoPregunta22">1</integer>
 
     //Tutorial
     <string name="introductionText">¡BIENVENIDO A SHONEN QUIZ!\n\nEN ESTE CONCURSO PODRÁS DEMOSTRAR QUE ERES EL VERDADERO PROTAGONISTA DE TU SERIE DE ACCIÓN GENÉRICA</string>

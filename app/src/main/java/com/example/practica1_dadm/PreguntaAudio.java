@@ -108,16 +108,25 @@ public class PreguntaAudio extends Fragment {
             }
         });
 
+        play_pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PlayPausa(view);
+            }
+        });
+
         // Inflate the layout for this fragment
         return root;
     }
 
     public void PlayPausa(View view){
-        if(audios[posicion].isPlaying()){
-            audios[posicion].pause();
+        if(audioQuestion.isPlaying()){
+            audioQuestion.pause();
+            //((Pregunta) getActivity()).pararMusic();
             play_pause.setBackgroundResource(R.drawable.pressed_playaudio_button_effect);
         } else {
-            audios[posicion].start();
+            audioQuestion.start();
+            //((Pregunta) getActivity()).pararMusic();
             play_pause.setBackgroundResource(R.drawable.pressed_pauseaudio_button_effect);
         }
     }
@@ -144,6 +153,7 @@ public class PreguntaAudio extends Fragment {
                     }
                 }
             }, 2000);
+            audioQuestion.stop();
             ((Pregunta) getActivity()).next();
 
         }else {
@@ -164,6 +174,7 @@ public class PreguntaAudio extends Fragment {
                 }
             }, 2000);
 
+            audioQuestion.stop();
             ((Pregunta) getActivity()).changeActivity();
         }
 
@@ -184,6 +195,39 @@ public class PreguntaAudio extends Fragment {
             botones[i].setBackgroundColor(Color.WHITE);
             //botones[i].setBackgroundColor(Color.alpha(0));
             botones[i].setEnabled(true);
+        }
+
+        switch (item.getIdxPregunta()){
+            case 12:
+                audioQuestion = audios[0];
+                break;
+            case 13:
+                audioQuestion = audios[1];
+                break;
+            case 14:
+                audioQuestion = audios[9];
+                break;
+            case 15:
+                audioQuestion = audios[2];
+                break;
+            case 16:
+                audioQuestion = audios[3];
+                break;
+            case 17:
+                audioQuestion = audios[4];
+                break;
+            case 18:
+                audioQuestion = audios[5];
+                break;
+            case 19:
+                audioQuestion = audios[6];
+                break;
+            case 20:
+                audioQuestion = audios[7];
+                break;
+            case 21:
+                audioQuestion = audios[8];
+                break;
         }
 
         return idxCorrect;

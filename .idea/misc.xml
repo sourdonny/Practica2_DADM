@@ -10,6 +10,7 @@
         <entry key="..\:/AndroidStudio/Practica1_DADM3-master/app/src/main/res/layout/activity_main.xml" value="0.28396739130434784" />
         <entry key="..\:/AndroidStudio/Practica1_DADM3-master/app/src/main/res/layout/activity_pregunta.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudio/Practica1_DADM3-master/app/src/main/res/layout/activity_result.xml" value="0.28396739130434784" />
+        <entry key="..\:/AndroidStudio/Practica2_DADM/app/src/main/res/layout/activity_ajustes.xml" value="0.175" />
         <entry key="..\:/AndroidStudio/Practica2_DADM/app/src/main/res/layout/fragment_pregunta_audio.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudio/Practica2_DADM/app/src/main/res/layout/fragment_pregunta_imagen.xml" value="0.36666666666666664" />
         <entry key="..\:/AndroidStudio/Practica2_DADM/app/src/main/res/layout/fragment_pregunta_texto.xml" value="0.36666666666666664" />
@@ -40,19 +41,10 @@
         <entry key="..\:/Users/minis/AndroidStudioProjects/Practica1_DADM3-master/Practica1_DADM3-master/app/src/main/res/layout/fragment_pregunta_audio.xml" value="0.245018115942029" />
         <entry key="..\:/Users/minis/AndroidStudioProjects/Practica1_DADM3-master/Practica1_DADM3-master/app/src/main/res/layout/fragment_pregunta_imagen.xml" value="0.245018115942029" />
         <entry key="..\:/Users/minis/AndroidStudioProjects/Practica1_DADM3-master/Practica1_DADM3-master/app/src/main/res/layout/fragment_pregunta_texto.xml" value="0.264" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/drawable/pressed_arrow_effect.xml" value="0.23981481481481481" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/drawable/pressed_pauseaudio_button_effect.xml" value="0.23796296296296296" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/drawable/pressed_playaudio_button_effect.xml" value="0.23796296296296296" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/drawable/pressed_ranking_button_effect.xml" value="0.23981481481481481" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/activity_ajustes.xml" value="0.2318840579710145" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/activity_name.xml" value="0.22192028985507245" />
         <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/activity_pregunta.xml" value="0.23596014492753623" />
         <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/activity_pressed_play.xml" value="0.23596014492753623" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/activity_ranking.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/activity_result.xml" value="0.23596014492753623" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/fragment_pregunta_audio.xml" value="0.2" />
-        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/fragment_pregunta_texto.xml" value="0.264" />
+        <entry key="..\:/Users/minis/OneDrive/Documentos/GitHub/Practica2_DADM/app/src/main/res/layout/fragment_pregunta_texto.xml" value="0.23596014492753623" />
       </map>
     </option>
   </component>

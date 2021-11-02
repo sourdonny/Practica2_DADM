@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        numPreguntas = getIntent().getStringExtra("numPreguntas");
         numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
         titleMusic = MediaPlayer.create(MainActivity.this, R.raw.titlemusic);
 
@@ -69,8 +68,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Jugar(View view){
+        titleMusic.stop();
         Intent introducirNombre = new Intent(this, Name.class);
-        introducirNombre.putExtra("numPreguntas", numPreguntas);
         introducirNombre.putExtra("numPreguntas2", numPreguntas2);
         startActivity(introducirNombre);
     }

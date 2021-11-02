@@ -22,8 +22,7 @@ public class Name extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name);
 
-        numPreguntas = getIntent().getStringExtra("numPreguntas");
-        numPreguntas2 = getIntent().getIntExtra("numPreguntas", 5);
+        numPreguntas2 = getIntent().getIntExtra("numPreguntas2", 5);
 
         nombreEditText = (AppCompatEditText) findViewById(R.id.nombreEditText);
 
