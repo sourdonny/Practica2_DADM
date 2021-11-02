@@ -45,38 +45,7 @@ public class Pregunta extends AppCompatActivity {
         ItemDAO dao = db.itemDAO();
         ItemRepositoryImpl repo = new ItemRepositoryImpl(dao);
 
-        /*Item item = new Item();
-        item.setIdxPregunta(0);
-        item.setTitulo(R.string.pregunta1);
-        item.setRespuesta1(R.string.respuesta11);
-        item.setRespuesta2(R.string.respuesta12);
-        item.setRespuesta3(R.string.respuesta13);
-        item.setRespuesta4(R.string.respuesta14);
-        item.setRespuestaCorrecta(R.string.respuesta11);
-        item.setTipoPregunta(0);
-        repo.InsertItem(item);
-
-        Item item2 = new Item();
-        item2.setIdxPregunta(1);
-        item2.setTitulo(R.string.pregunta2);
-        item2.setRespuesta1(R.string.respuesta21);
-        item2.setRespuesta2(R.string.respuesta22);
-        item2.setRespuesta3(R.string.respuesta23);
-        item2.setRespuesta4(R.string.respuesta24);
-        item2.setRespuestaCorrecta(R.string.respuesta21);
-        item2.setTipoPregunta(0);
-        repo.InsertItem(item2);
-
-        Item item3 = new Item();
-        item3.setIdxPregunta(2);
-        item3.setTitulo(R.string.pregunta3);
-        item3.setRespuesta1(R.string.respuesta31);
-        item3.setRespuesta2(R.string.respuesta32);
-        item3.setRespuesta3(R.string.respuesta33);
-        item3.setRespuesta4(R.string.respuesta34);
-        item3.setRespuestaCorrecta(R.string.respuesta31);
-        item3.setTipoPregunta(1);
-        repo.InsertItem(item3);*/
+        //repo = GeneratePreguntas(repo);
 
         items = repo.getAllItems();
 
@@ -91,6 +60,7 @@ public class Pregunta extends AppCompatActivity {
                 break;
 
             case 1:
+                items.remove(0);
                 ft.replace(R.id.preguntaFrameLayout, new PreguntaAudio());
                 break;
         }
@@ -100,7 +70,6 @@ public class Pregunta extends AppCompatActivity {
 
     public void next(){
         FragmentTransaction fts = getSupportFragmentManager().beginTransaction();
-
         switch(items.get(0).getTipoPregunta()) {
             case 0:
                 items.remove(0);
@@ -113,6 +82,186 @@ public class Pregunta extends AppCompatActivity {
                 break;
         }
         fts.commit();
+    }
+
+    public ItemRepositoryImpl GeneratePreguntas(ItemRepositoryImpl repo){
+
+        Item item = new Item();
+        item.setIdxPregunta(0);
+        item.setTitulo(R.string.pregunta1);
+        item.setRespuesta1(R.string.respuesta11);
+        item.setRespuesta2(R.string.respuesta12);
+        item.setRespuesta3(R.string.respuesta13);
+        item.setRespuesta4(R.string.respuesta14);
+        item.setRespuestaCorrecta(R.string.respuesta11);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(1);
+        item.setTitulo(R.string.pregunta2);
+        item.setRespuesta1(R.string.respuesta21);
+        item.setRespuesta2(R.string.respuesta22);
+        item.setRespuesta3(R.string.respuesta23);
+        item.setRespuesta4(R.string.respuesta24);
+        item.setRespuestaCorrecta(R.string.respuesta21);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(2);
+        item.setTitulo(R.string.pregunta3);
+        item.setRespuesta1(R.string.respuesta31);
+        item.setRespuesta2(R.string.respuesta32);
+        item.setRespuesta3(R.string.respuesta33);
+        item.setRespuesta4(R.string.respuesta34);
+        item.setRespuestaCorrecta(R.string.respuesta31);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(3);
+        item.setTitulo(R.string.pregunta4);
+        item.setRespuesta1(R.string.respuesta41);
+        item.setRespuesta2(R.string.respuesta42);
+        item.setRespuesta3(R.string.respuesta43);
+        item.setRespuesta4(R.string.respuesta44);
+        item.setRespuestaCorrecta(R.string.respuesta41);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(4);
+        item.setTitulo(R.string.pregunta5);
+        item.setRespuesta1(R.string.respuesta51);
+        item.setRespuesta2(R.string.respuesta52);
+        item.setRespuesta3(R.string.respuesta53);
+        item.setRespuesta4(R.string.respuesta54);
+        item.setRespuestaCorrecta(R.string.respuesta51);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(5);
+        item.setTitulo(R.string.pregunta6);
+        item.setRespuesta1(R.string.respuesta61);
+        item.setRespuesta2(R.string.respuesta62);
+        item.setRespuesta3(R.string.respuesta63);
+        item.setRespuesta4(R.string.respuesta64);
+        item.setRespuestaCorrecta(R.string.respuesta61);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(6);
+        item.setTitulo(R.string.pregunta7);
+        item.setRespuesta1(R.string.respuesta71);
+        item.setRespuesta2(R.string.respuesta72);
+        item.setRespuesta3(R.string.respuesta73);
+        item.setRespuesta4(R.string.respuesta74);
+        item.setRespuestaCorrecta(R.string.respuesta71);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(7);
+        item.setTitulo(R.string.pregunta8);
+        item.setRespuesta1(R.string.respuesta81);
+        item.setRespuesta2(R.string.respuesta82);
+        item.setRespuesta3(R.string.respuesta83);
+        item.setRespuesta4(R.string.respuesta84);
+        item.setRespuestaCorrecta(R.string.respuesta81);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(8);
+        item.setTitulo(R.string.pregunta9);
+        item.setRespuesta1(R.string.respuesta91);
+        item.setRespuesta2(R.string.respuesta92);
+        item.setRespuesta3(R.string.respuesta93);
+        item.setRespuesta4(R.string.respuesta94);
+        item.setRespuestaCorrecta(R.string.respuesta91);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(9);
+        item.setTitulo(R.string.pregunta10);
+        item.setRespuesta1(R.string.respuesta101);
+        item.setRespuesta2(R.string.respuesta102);
+        item.setRespuesta3(R.string.respuesta103);
+        item.setRespuesta4(R.string.respuesta104);
+        item.setRespuestaCorrecta(R.string.respuesta101);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(10);
+        item.setTitulo(R.string.pregunta11);
+        item.setRespuesta1(R.string.respuesta111);
+        item.setRespuesta2(R.string.respuesta112);
+        item.setRespuesta3(R.string.respuesta113);
+        item.setRespuesta4(R.string.respuesta114);
+        item.setRespuestaCorrecta(R.string.respuesta111);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(11);
+        item.setTitulo(R.string.pregunta12);
+        item.setRespuesta1(R.string.respuesta121);
+        item.setRespuesta2(R.string.respuesta122);
+        item.setRespuesta3(R.string.respuesta123);
+        item.setRespuesta4(R.string.respuesta124);
+        item.setRespuestaCorrecta(R.string.respuesta121);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(12);
+        item.setTitulo(R.string.pregunta13);
+        item.setRespuesta1(R.string.respuesta131);
+        item.setRespuesta2(R.string.respuesta132);
+        item.setRespuesta3(R.string.respuesta133);
+        item.setRespuesta4(R.string.respuesta134);
+        item.setRespuestaCorrecta(R.string.respuesta131);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(13);
+        item.setTitulo(R.string.pregunta14);
+        item.setRespuesta1(R.string.respuesta141);
+        item.setRespuesta2(R.string.respuesta142);
+        item.setRespuesta3(R.string.respuesta143);
+        item.setRespuesta4(R.string.respuesta144);
+        item.setRespuestaCorrecta(R.string.respuesta141);
+        item.setTipoPregunta(1);
+        repo.InsertItem(item);
+
+        item.setIdxPregunta(14);
+        item.setTitulo(R.string.pregunta15);
+        item.setRespuesta1(R.string.respuesta151);
+        item.setRespuesta2(R.string.respuesta152);
+        item.setRespuesta3(R.string.respuesta153);
+        item.setRespuesta4(R.string.respuesta154);
+        item.setRespuestaCorrecta(R.string.respuesta151);
+        item.setTipoPregunta(0);
+        repo.InsertItem(item);
+
+
+
+
+/*
+        for(int i = 1; i < 15; i++){
+
+            String pg = "pregunta" + i;
+            String rs1 = "respuesta" + i + "1";
+            String rs2 = "respuesta" + i + "2";
+            String rs3 = "respuesta" + i + "3";
+            String rs4 = "respuesta" + i + "4";
+            String tipo = "tipoPregunta" + i;
+
+            item.setIdxPregunta(0);
+            item.setTitulo(R.string.pregunta1);
+            item.setRespuesta1(R.string.respuesta11);
+            item.setRespuesta2(R.string.respuesta12);
+            item.setRespuesta3(R.string.respuesta13);
+            item.setRespuesta4(R.string.respuesta14);
+            item.setRespuestaCorrecta(R.string.respuesta11);
+            item.setTipoPregunta(R.integer.tipoPregunta1);
+            repo.InsertItem(item);
+        }*/
+
+        return repo;
     }
     /*
     AppDatabase db = AppDatabase.GetInstance(this.getApplicationContext());

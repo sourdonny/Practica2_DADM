@@ -118,6 +118,7 @@ public class PreguntaTexto extends Fragment {
             } else {
                 botones[id].setBackgroundColor(Color.RED);
             }
+            ((Pregunta) getActivity()).next();
             /*botones[id].postDelayed(new Runnable() {
                 @Override
                 public void run() {
@@ -133,6 +134,7 @@ public class PreguntaTexto extends Fragment {
             //startActivity(result);
             //finish();
         }
+
         //puntos.setText("" + pts);
     }
 
